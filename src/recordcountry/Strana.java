@@ -95,17 +95,6 @@ public class Strana {
 
 
 
-    public static void maxSquareCountry(){
-// СТРАНА С МАКСИМАЛЬНОЙ ПЛОЩАДЬЮ
-        int pos_max=0;    // номер элемента для страны с максимальной
-// площадью (начальное значение)
-        for(int i=0;i<country.length;i++)
-            if(country[i].getSquare()>country[pos_max].getSquare()){
-                pos_max=i;
-            }
-        System.out.println("\nСтрана с максимальной площадью :");
-        System.out.println("\t"+ country[pos_max]+"млн кв. км");
-    }
 
     public static void sortByPopulation(){
 // СОРТИРОВКА СТРАН ПО ЧИСЛЕННОСТИ
