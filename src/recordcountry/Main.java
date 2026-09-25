@@ -14,6 +14,7 @@ public class Main {
             System.out.println("5. Упорядочить страны по численности населения");
             System.out.println("6. Упорядочить страны по названиям");
             System.out.println("7. Упорядочить по площади");
+            System.out.println("8. Поиск по столице");
             System.out.println("0. Выход");
             System.out.println("Выберете пункт меню (1..7)");
             int c = (new Scanner(System.in)).nextInt();

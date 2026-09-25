@@ -118,6 +118,13 @@ public class CountryService {
             System.out.println(""+country[i]);}
     }
 
-
+    public static Strana findByCapital(String capital) {
+        for (Strana s : country) {
+            if (s.getCapital().equalsIgnoreCase(capital)) {
+                return s;
+            }
+        }
+        return null;
+    }
 
 }
