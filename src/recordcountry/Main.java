@@ -19,8 +19,8 @@ public class Main {
             switch (c) {
                 case 1: CountryService.fillCountry(); break;
                 case 2: CountryService.printCountry(); break;
-                case 3: Strana.countriesBiggerThanAvgSquareList(); break;
-                case 4: Strana.maxSquareCountry(); break;
+                case 3: CountryService.countriesBiggerThanAvgSquareList(); break;
+                case 4: CountryService.maxSquareCountry(); break;
                 case 5: Strana.sortByPopulation(); break;
                 case 6: Strana.sortByName(); break;
                 default: break cycle;
