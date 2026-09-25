@@ -26,4 +26,13 @@ public class CountryService {
             country[i]=new Strana();
         }
     }
+
+    public static void printCountry(){
+// ВЫВОД ПОЛУЧЕННОЙ ИНФОРМАЦИИ
+        System.out.println("\nХарактеристики стран:");
+        for(int i=0;i<country.length;i++){
+            System.out.println(country[i]);
+        }
+    }
+
 }

@@ -18,7 +18,7 @@ public class Main {
             int c = (new Scanner(System.in)).nextInt();
             switch (c) {
                 case 1: CountryService.fillCountry(); break;
-                case 2: Strana.printCountry(); break;
+                case 2: CountryService.printCountry(); break;
                 case 3: Strana.countriesBiggerThanAvgSquareList(); break;
                 case 4: Strana.maxSquareCountry(); break;
                 case 5: Strana.sortByPopulation(); break;

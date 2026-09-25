@@ -91,13 +91,6 @@ public class Strana {
 
 
 
-    public static void printCountry(){
-// ВЫВОД ПОЛУЧЕННОЙ ИНФОРМАЦИИ
-        System.out.println("\nХарактеристики стран:");
-        for(int i=0;i<country.length;i++){
-            System.out.println(country[i]);
-        }
-    }
 
     public static double avgSquare(){
 // СРЕДНЯЯ ПЛОЩАДЬ СТРАН
