@@ -21,8 +21,8 @@ public class Main {
                 case 2: CountryService.printCountry(); break;
                 case 3: CountryService.countriesBiggerThanAvgSquareList(); break;
                 case 4: CountryService.maxSquareCountry(); break;
-                case 5: Strana.sortByPopulation(); break;
-                case 6: Strana.sortByName(); break;
+                case 5: CountryService.sortByPopulation(); break;
+                case 6: CountryService.sortByName(); break;
                 default: break cycle;
             }
         }

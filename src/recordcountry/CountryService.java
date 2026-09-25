@@ -65,4 +65,33 @@ public class CountryService {
         System.out.println("\t"+ country[pos_max]+"млн кв. км");
     }
 
+
+    public static void sortByPopulation(){
+// СОРТИРОВКА СТРАН ПО ЧИСЛЕННОСТИ
+        for(int i=0;i<country.length-1;i++)
+            for(int j=0;j<country.length-1-i;j++)
+                if(country[j].getPopulation()>country[j+1].getPopulation()){
+                    Strana rab=country[j];
+                    country[j]=country[j+1];
+                    country[j+1]=rab;
+                }
+        System.out.println("\nОтсортированный список по численности:");//
+        for(int i=0;i<country.length;i++){
+            System.out.println(""+country[i]);}
+    }
+
+    public static void sortByName(){
+// СОРТИРОВКА СТРАН ПО НАЗВАНИЮ
+        for(int i=0;i<country.length-1;i++)
+            for(int j=0;j<country.length-i-1;j++)
+                if(country[j].getName().compareTo(country[i+1].getName())>0){
+                    Strana rab=country[j];
+                    country[j]=country[j+1];
+                    country[j+1]=rab;
+                }
+        System.out.println("\nОтсортированный список по названиям:");
+        for(int i=0;i<country.length;i++){
+            System.out.println(""+country[i]);
+        }
+    }
 }
