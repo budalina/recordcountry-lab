@@ -1,5 +1,7 @@
 package recordcountry;
 
+import java.util.Scanner;
+
 public class CountryService {
     private static Strana[] country ;
 
@@ -12,4 +14,16 @@ public class CountryService {
         };
     }
 
+    public static void fillCountry(){
+        // ВВОД ИНФОРМАЦИИ О СТРАНАХ
+        System.out.println("Введите количество стран=> ");
+        int n=(new Scanner(System.in,"cp1251")).nextInt();    // количество стран
+        country=new Strana[n];
+        System.out.println("Введите информацию о странах: ");
+
+        for(int i=0;i<country.length;i++){
+            System.out.println("Страна " +(i+1)+"=>");
+            country[i]=new Strana();
+        }
+    }
 }
