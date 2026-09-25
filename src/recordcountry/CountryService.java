@@ -94,4 +94,15 @@ public class CountryService {
             System.out.println(""+country[i]);
         }
     }
+
+    public static Strana searchByName(String name) {
+        System.out.println("Поиск страны: " + name);
+        for (int i = 0; i < country.length; i++) {
+            if (country[i].getName().equals(name)) {
+                return country[i];
+            }
+        }
+        return null;
+    }
+
 }
