@@ -94,4 +94,15 @@ public class CountryService {
             System.out.println(""+country[i]);
         }
     }
+
+    public static Strana findByName(String name) {
+        for (Strana s : country) {
+            if (s.getName().equalsIgnoreCase(name)) {
+                return s;
+            }
+        }
+        return null;
+    }
+
+
 }
