@@ -25,7 +25,7 @@ public class Main {
                 case 5: CountryService.sortByPopulation(); break;
                 case 6: CountryService.sortByName(); break;
                 case 7: CountryService.sortBySquare(); break;
-
+                case 8: CountryService.findByCapital((new Scanner(System.in)).nextLine());
                 default: break cycle;
             }
         }
