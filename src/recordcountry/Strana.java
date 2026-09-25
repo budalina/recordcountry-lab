@@ -8,16 +8,7 @@ public class Strana {
     private String capital; // столица
     private double square; // площадь страны
     private int population; // численность
-    private static Strana[] country ;
 
-    static {
-        country= new Strana[] {
-                new Strana("Russia", "Moscow", 107.1, 148),
-                new Strana("France", "Paris", 27.1, 137),
-                new Strana("Great Britain", "London", 13.1, 150),
-                new Strana("Italy", "Rome", 18.1, 104)
-        };
-    }
     // конструкторы
     public Strana(String name, String capital, double square, int population) {
         this.name = name;
