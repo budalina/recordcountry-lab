@@ -35,4 +35,22 @@ public class CountryService {
         }
     }
 
+    public static double avgSquare(){
+// СРЕДНЯЯ ПЛОЩАДЬ СТРАН
+        double sumSquare=0;
+        for(int i=0;i<country.length;i++){
+            sumSquare+=country[i].getSquare();
+        }
+        if(country.length>0)return sumSquare/country.length;
+        return-1;
+    }
+
+    public static void countriesBiggerThanAvgSquareList(){
+// СТРАНЫ С ПЛОЩАДЬЮ БОЛЬШЕ СРЕДНЕЙ
+        System.out.println("\nСписок стран с площадью больше средней:");
+        for(Strana str:country)
+            if(str.getSquare()>avgSquare())System.out.println(str);
+    }
+
+
 }
