@@ -14,6 +14,8 @@ public class Main {
             System.out.println("5. Упорядочить страны по численности населения");
             System.out.println("6. Упорядочить страны по названиям");
             System.out.println("7. Поиск по названию");
+            System.out.println("8. Поиск по столице");
+            System.out.println("9. Упорядочить по площади");
             System.out.println("0. Выход");
             System.out.println("Выберете пункт меню (1..7)");
             int c = (new Scanner(System.in)).nextInt();
@@ -25,6 +27,8 @@ public class Main {
                 case 5: CountryService.sortByPopulation(); break;
                 case 6: CountryService.sortByName(); break;
                 case 7: CountryService.findByName((new Scanner(System.in)).nextLine()); break;
+                case 8: CountryService.findByCapital((new Scanner(System.in)).nextLine());
+                case 9: CountryService.sortBySquare(); break;
                 default: break cycle;
             }
         }
