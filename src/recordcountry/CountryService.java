@@ -95,14 +95,14 @@ public class CountryService {
         }
     }
 
-    public static Strana searchByName(String name) {
-        System.out.println("Поиск страны: " + name);
-        for (int i = 0; i < country.length; i++) {
-            if (country[i].getName().equals(name)) {
-                return country[i];
+    public static Strana findByName(String name) {
+        for (Strana s : country) {
+            if (s.getName().equalsIgnoreCase(name)) {
+                return s;
             }
         }
         return null;
     }
+
 
 }
